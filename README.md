@@ -8,6 +8,7 @@ ADT_trial_colab_notebook_with_full_output_b.ipynb is [notebook with full output 
 
 
 ## Automatic Drum Transcription (ADT) result 
+There are drum1.wav, drum2.wav, and drum3.wav in the drum wav files folder.  
 drum1.wav and drum2.wav are basic 8 beat drum pattern. ADT result is not perfect.  
 ![figure1](docs/drum1_result_vs_ground_truth.jpg)  
 ![figure2](docs/drum2_result_vs_ground_truth.jpg)  
