@@ -1,0 +1,28 @@
+To run ADTLib on windows:
+
+a) add shell=True and change call DBNDownBeatTracker.bat instead of  DBNDownBeatTracker.
+   Because windows fails to call python directly.
+
+  \python\Lib\site-packages\ADTLib\utils\__init__.py
+  
+   def tab_create(Onsets,Filename_,save_dir_):
+               
+     subprocess.call(["DBNDownBeatTracker.bat","single","-o","DB.txt",wav], shell=True)
+
+
+b) edit new  DBNDownBeatTracker.bat
+
+  \python\Scripts\DBNDownBeatTracker.bat 
+     python (your full path)DBNDownBeatTracker %1 %2 %3 %4
+
+
+  if necessary, add (your full path)python\Scripts to your path
+
+
+c) edit new  ADT.bat
+  if you want to use ADT as a command, edit new ADT.bat.
+
+  \python\Scripts\ADT.bat
+    python (your full path)ADT %1 %2 %3 %4
+
+  
